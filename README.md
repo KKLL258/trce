@@ -31,6 +31,8 @@
 | | | | 🔹 SSE 流式输出实时显示，模拟 ChatGPT 打字效果<br>🔹 终端交互式输入，持续对话<br>🔹 历史消息自动维护上下文<br>🔹 Ctrl+C 优雅退出处理<br>🔹 每轮对话性能统计 |
 | | | `tool_chat.py` | ✅ **系统提示词驱动工具调用** |
 | | | | 🔹 通过系统提示词教 LLM 输出 JSON 格式调用<br>🔹 6个内置工具函数：文件操作 + 网络访问<br>🔹 list_directory - 列出目录及文件属性<br>🔹 rename_file / delete_file - 文件重命名、删除<br>🔹 create_file / read_file - 创建、读取文件<br>🔹 curl_request - 模拟 curl 访问网页<br>🔹 自动解析并执行工具调用，多轮调用循环 |
+| | | `openai_tool_chat.py` | ✅ **OpenAI 标准 Function Calling** |
+| | | | 🔹 使用 OpenAI 官方标准协议<br>🔹 结构化 tools 参数传递<br>🔹 并行工具调用支持<br>🔹 自动多轮调用循环 |
 
 ---
 
